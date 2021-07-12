@@ -16,6 +16,16 @@ class HomeScreen extends StatelessWidget {
                 googleLogo,
                 width: MediaQuery.of(context).size.width / 2,
               ),
+              SizedBox(height: 30.0),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: TextField(
+                  decoration: InputDecoration(
+                    fillColor: appSecondaryColor,
+                    filled: true,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
