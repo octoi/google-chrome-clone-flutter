@@ -23,6 +23,7 @@ class HomeScreen extends StatelessWidget {
                   decoration: InputDecoration(
                     fillColor: appSecondaryColor,
                     filled: true,
+                    suffixIcon: Icon(Icons.mic),
                   ),
                 ),
               ),
