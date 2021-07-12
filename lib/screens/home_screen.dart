@@ -20,9 +20,15 @@ class HomeScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: TextField(
+                  cursorColor: appAccentColor,
                   decoration: InputDecoration(
-                    fillColor: appSecondaryColor,
                     filled: true,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(width: 0, style: BorderStyle.none),
+                    ),
+                    fillColor: appSecondaryColor,
+                    contentPadding: EdgeInsets.all(20.0),
                     suffixIcon: Icon(Icons.mic),
                   ),
                 ),
