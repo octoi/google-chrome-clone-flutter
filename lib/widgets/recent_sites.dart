@@ -14,6 +14,19 @@ class RecentSites extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               ImageButton(),
+              ImageButton(),
+              ImageButton(),
+              ImageButton(),
+            ],
+          ),
+          SizedBox(height: 30.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ImageButton(),
+              ImageButton(),
+              ImageButton(),
+              ImageButton(),
             ],
           ),
         ],
