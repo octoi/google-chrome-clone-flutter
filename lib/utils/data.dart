@@ -1,3 +1,7 @@
+import 'package:flutter/material.dart';
+
+// icons
+
 const String googleLogo =
     'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png';
 
@@ -24,3 +28,9 @@ const String googleDriveIcon =
 
 const String googleTranslateIcon =
     'https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png';
+
+// colors
+
+const Color appPrimaryColor = Colors.white;
+const Color appSecondaryColor = Color(0xFFF2F4F5);
+const Color appAccentColor = Color(0xFF4E5357);
