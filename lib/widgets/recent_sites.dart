@@ -14,6 +14,9 @@ class RecentSites extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               ImageButton(image: youtubeLogo),
+              ImageButton(image: twitterLogo),
+              ImageButton(image: facebookLogo),
+              ImageButton(image: instagramLogo),
             ],
           ),
           SizedBox(height: 30.0),
