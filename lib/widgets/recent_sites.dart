@@ -13,22 +13,10 @@ class RecentSites extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              ImageButton(),
-              ImageButton(),
-              ImageButton(),
-              ImageButton(),
+              ImageButton(image: youtubeLogo),
             ],
           ),
           SizedBox(height: 30.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              ImageButton(),
-              ImageButton(),
-              ImageButton(),
-              ImageButton(),
-            ],
-          ),
         ],
       ),
     );
@@ -36,7 +24,9 @@ class RecentSites extends StatelessWidget {
 }
 
 class ImageButton extends StatelessWidget {
-  const ImageButton({Key? key}) : super(key: key);
+  final String image;
+
+  const ImageButton({Key? key, required this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +38,7 @@ class ImageButton extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(10.0),
         width: MediaQuery.of(context).size.width / 4 / 2,
-        child: Image.network(youtubeLogo),
+        child: Image.network(image),
       ),
     );
   }
